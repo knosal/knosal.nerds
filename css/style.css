@@ -4,9 +4,132 @@ body{
 	margin: 0 auto;
 }
 
+li{
+	list-style-type: none;
+}
+
+a{
+	text-decoration: none;
+	color: #000000;
+}
+
 .container{
 	width: 1160px;
 
 	padding: 0 20px;
 	margin: 0 auto;
+}
+
+.header{
+	background-color: rgba(238,238,238,1);
+}
+
+.header__navigation .container{
+	display: flex;
+	justify-content: space-between;
+}
+
+.header__navigation_items{
+	display: flex;
+}
+
+.header__navigation_items li{
+	padding: 0 20px;
+}
+
+.header__slider-holder{
+	display: flex;
+}
+
+.advantages .container{
+	display: flex;
+}
+
+.studio .container{
+	display: flex;
+}
+
+.logotypes .logotypes__logo{
+	height: 185px;
+
+	border-top: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+
+	display: flex;
+	justify-content: space-between;
+
+	padding: 0 35px;
+}
+
+.logotypes__logo_image{
+	position: relative;
+}
+
+.logotypes__logo{
+	align-items: center;
+
+}
+
+.logotypes__logo img:first-child{
+	opacity: 0.5;
+}
+
+.logotypes__logo img:nth-child(2){
+	display: none;
+}
+
+.logotypes__logo a:hover img:nth-child(2){
+	display: block;
+}
+
+.logotypes__logo a:hover img:first-child{
+	display: none;
+}
+
+.contacts{
+	position: relative;
+}
+
+.contacts .contacts__holder{
+	position: absolute;
+	z-index: 1;
+
+	background-color: rgba(255,255,255,1);
+
+	width: 320px;
+	height: 310px;
+
+	margin-left: 140px;
+	margin-top: 50px;
+}
+
+.contacts__holder_wrapper{
+	padding-top: 50px;
+	padding-left: 50px;
+}
+
+.map_badge{
+	position: absolute;
+
+	right: 380px;
+	top: 100px;
+}
+
+.footer .container{
+	display: flex;
+}
+
+.footer__icons_list{
+	display: flex;
+	justify-content: flex-start;
+
+	padding: 0;
+}
+
+.footer__icons_list li{
+	margin: 0 20px;
+}
+
+.footer__holder{
+	margin-left: 120px;
 }
